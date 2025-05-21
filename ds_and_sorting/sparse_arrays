@@ -1,0 +1,43 @@
+"""
+Given a list of input strings and a list of query strings, this program counts 
+how many times each query string occurs in the list of input strings.
+"""
+
+def matchingStrings(strings, queries):
+    # Result list to hold counts for each query
+    result = []
+    
+    # For each query, count occurrences in strings list
+    for query in queries:
+        count = strings.count(query)  # count method returns frequency
+        result.append(count)
+    
+    return result
+
+
+if __name__ == '__main__':
+    # Read number of strings
+    strings_count = int(input().strip())
+
+    strings = []
+
+    # Read each string and append to list
+    for _ in range(strings_count):
+        strings_item = input().strip()
+        strings.append(strings_item)
+
+    # Read number of queries
+    queries_count = int(input().strip())
+
+    queries = []
+
+    # Read each query string
+    for _ in range(queries_count):
+        queries_item = input().strip()
+        queries.append(queries_item)
+
+    # Get the count of occurrences for each query
+    res = matchingStrings(strings, queries)
+
+    # Print results, one per line
+    print('\n'.join(map(str, res)))
