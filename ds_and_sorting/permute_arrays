@@ -1,0 +1,49 @@
+"""
+Permuting Two Arrays Problem
+
+Given two arrays A and B of equal size and an integer k, determine if there exists a 
+permutation of A and B such that for every index i, the sum A[i] + B[i] >= k.
+
+Approach:
+- Sort array A in ascending order.
+- Sort array B in descending order.
+- Pair elements by index and check sums.
+- If all sums satisfy the condition, return "YES", else "NO".
+"""
+
+def twoArrays(k, A, B):
+    # Sort A in ascending order to have smallest elements first
+    A.sort()
+    
+    # Sort B in descending order to have largest elements first
+    B.sort(reverse=True)
+    
+    # Check each pair sum
+    for i in range(len(A)):
+        if A[i] + B[i] < k:  # If any pair sum is less than k, condition fails
+            return "NO"
+        
+    # If all pairs satisfy the condition, return YES
+    return "YES"
+    
+if __name__ == '__main__':
+    # Open output file from environment variable for HackerRank submission
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    q = int(input().strip())  # Number of test cases
+
+    for _ in range(q):
+        # Read n (size of arrays) and k (target sum)
+        n, k = map(int, input().rstrip().split())
+
+        # Read arrays A and B
+        A = list(map(int, input().rstrip().split()))
+        B = list(map(int, input().rstrip().split()))
+
+        # Get result from twoArrays function
+        result = twoArrays(k, A, B)
+
+        # Write result to output file
+        fptr.write(result + '\n')
+
+    fptr.close()
