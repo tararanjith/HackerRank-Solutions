@@ -27,6 +27,7 @@ Solutions to HackerRank challenges organized by topic.
 - Nested Lists - nested list sorting  
 - Find the Runner-Up Score - list logic
 - Sparse Arrays - count logic
+- Permuting 2 arrays - sort logic
 
 ### 4. Array and Math Problems  
 - Plus Minus - ratio calculation  
