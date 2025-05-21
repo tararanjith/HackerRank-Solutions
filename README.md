@@ -25,7 +25,8 @@ Solutions to HackerRank challenges organized by topic.
 - Tuples - tuple operations  
 - Lists - list operations  
 - Nested Lists - nested list sorting  
-- Find the Runner-Up Score - list logic  
+- Find the Runner-Up Score - list logic
+- Sparse Arrays - count logic
 
 ### 4. Array and Math Problems  
 - Plus Minus - ratio calculation  
