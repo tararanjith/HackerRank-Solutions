@@ -33,7 +33,8 @@ Solutions to HackerRank challenges organized by topic.
 - Plus Minus - ratio calculation  
 - Minimax Sum - sum calculations  
 - Lonely Integer - find unique element  
-- Diagonal Difference - matrix diagonal difference  
+- Diagonal Difference - matrix diagonal difference
+- Birthday Chocolate - sliding window logic
 
 ### 5. Time and String Conversion  
 - Time Conversion - convert time formats  
